@@ -249,7 +249,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  *
  * Description: If the file cannot be closed - exit code 98.
  */
-void close_elf (int elf)
+void close_elf(int elf)
 {
 	if (close(elf) == -1)
 	{
@@ -270,8 +270,7 @@ void close_elf (int elf)
  * Description: If the file is not an ELF File or
  *              the function fails - exit code 98.
  */
-int main
-(int __attribute__((__unused__)) argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	Elf64_Ehdr *header;
 	int o, r;
